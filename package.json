@@ -1,0 +1,44 @@
+{
+	"name": "@writepanda/mcp",
+	"version": "1.110.0",
+	"description": "Model Context Protocol server for PandaStudio. Exposes the desktop video editor's automation surface to Cursor, Continue, Cline, Claude Desktop, and any MCP-compliant client.",
+	"keywords": [
+		"pandastudio",
+		"mcp",
+		"model-context-protocol",
+		"video-editor",
+		"agent",
+		"cursor",
+		"continue",
+		"cline",
+		"claude-desktop"
+	],
+	"author": "Kamala Kannan Sankarraj",
+	"license": "MIT",
+	"homepage": "https://www.writepanda.ai/cli",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kamskans/pandastudio-mcp.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kamskans/pandastudio-mcp/issues"
+	},
+	"type": "module",
+	"engines": {
+		"node": ">=18"
+	},
+	"bin": {
+		"writepanda-mcp": "./bin/server.mjs"
+	},
+	"files": [
+		"bin",
+		"README.md",
+		"LICENSE"
+	],
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.0.4"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
