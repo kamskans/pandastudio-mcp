@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/@writepanda/mcp)](https://www.npmjs.com/package/@writepanda/mcp)
 [![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 
-[Model Context Protocol](https://modelcontextprotocol.io) server for **[PandaStudio](https://www.writepanda.ai)** — a local-first desktop video editor. It exposes the editor's full automation surface (**148 tools**) to Claude, ChatGPT/Codex, Cursor, Cline, Continue, and any MCP-compliant client.
+[Model Context Protocol](https://modelcontextprotocol.io) server for **[PandaStudio](https://www.writepanda.ai)** — a local-first desktop video editor. It exposes the editor's full automation surface (**329 tools**) to Claude, ChatGPT/Codex, Cursor, Cline, Continue, and any MCP-compliant client.
 
 Most video MCP servers wrap FFmpeg or call a cloud rendering API. This one drives a **real desktop editor** running on your machine: transcript-based cutting, filler-word removal, motion graphics, captions, background removal, thumbnails, and publishing to YouTube/Instagram. Your footage never leaves your computer.
 
@@ -13,6 +13,17 @@ Most video MCP servers wrap FFmpeg or call a cloud rendering API. This one drive
 ```
 
 …and the agent actually does it, end to end.
+
+## What PandaStudio is
+
+PandaStudio is a desktop video and podcast editor for macOS and Windows. Recording, transcription and editing run on your computer, and it is sold as a one-time license (from $99) or $19/month, with a free trial of 10 exports.
+
+- **Edit by transcript:** delete words to cut, remove fillers and silences, captions with highlighted words, zooms, motion graphics, color, background removal.
+- **Make clips:** turn a long video into captioned 9:16 Shorts on your own machine, with no per-minute credits. Measured on an Apple M4 Pro MacBook Pro: an 11-minute camera recording became 4 clips in 78 seconds.
+- **Record:** screen, camera, or a remote podcast with up to 3 guests, each recorded locally.
+- **Agents:** the built-in agent, or Claude Code, Claude Desktop, Codex and any MCP client through this server.
+
+Comparisons: [OpusClip alternatives](https://www.writepanda.ai/alternatives/best-opus-clip-alternatives/) · [Submagic alternatives](https://www.writepanda.ai/alternatives/best-submagic-alternatives/) · [VEED alternatives](https://www.writepanda.ai/alternatives/best-veed-alternatives/) · [Riverside alternatives](https://www.writepanda.ai/alternatives/best-riverside-alternatives/) · [Descript alternatives](https://www.writepanda.ai/alternatives/best-descript-alternatives/)
 
 ## Requirements
 
@@ -55,7 +66,7 @@ Restart the client afterwards. The server auto-launches PandaStudio if it isn't 
 
 ## What the agent gets
 
-**148 tools**, full parity with the desktop UI — anything you can do by clicking, an agent can do by asking.
+**329 tools**, full parity with the desktop UI — anything you can do by clicking, an agent can do by asking.
 
 | Category | Tools | What it covers |
 |---|--:|---|
@@ -101,7 +112,7 @@ The server honours the same license gate as the desktop app. With an expired tri
 
 ## Companions
 
-- **[`@writepanda/cli`](https://www.npmjs.com/package/@writepanda/cli)** — the same surface as a shell command (`pandastudio system.status`). Better for bash/CI scripting, and cheaper on context than 148 tool schemas.
+- **[`@writepanda/cli`](https://www.npmjs.com/package/@writepanda/cli)** — the same surface as a shell command (`pandastudio system.status`). Better for bash/CI scripting, and cheaper on context than 329 tool schemas.
 - **[PandaStudio Agent Skill](https://github.com/kamskans/pandastudio-skills)** — `npx skills add kamskans/pandastudio-skills`. The authoritative playbook: which verbs to call, in what order, with what defaults per destination.
 
 ## Documentation
